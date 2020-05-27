@@ -120,12 +120,12 @@ def winner
   index = []
   index = won? #Are you in the position that won?
   if index == false #if no position won
-    return nil #return no winner
+    return nil #return no winner, nil
   else
     if @board[index[0]] == "X"
-      return "X"
+      return "X" #when X wins on any position in the board, return X
     else
-      return "O"
+      return "O" #when O wins on any position in the board, return O
     end
   end
 end
