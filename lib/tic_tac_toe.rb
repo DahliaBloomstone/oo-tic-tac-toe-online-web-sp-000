@@ -96,7 +96,7 @@ def won?
   return false
 end
 
-def full? #returns true for a draw, false for in progress game 
+def full? #returns true for a draw, false for in progress game
   @board.all? {|index| index == "X" || index == "O"}
 end
 
@@ -104,7 +104,7 @@ def draw?
   if !won? && full? #(If someone did not win and the board is full)
     return true #true for a draw
   else
-    return false #false for a won game or in progress game 
+    return false #false for a won game or in progress game
   end
 end
 
