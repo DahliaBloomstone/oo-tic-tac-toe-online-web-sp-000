@@ -117,10 +117,10 @@ def over?
 end
 
 def winner
-  index = []
-  index = won?
-  if index == false
-    return nil
+  index = [] 
+  index = won? #Are you in the position that won?
+  if index == false #if no position won
+    return nil #return no winner
   else
     if @board[index[0]] == "X"
       return "X"
