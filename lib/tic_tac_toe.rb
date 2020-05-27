@@ -96,7 +96,7 @@ def won?
   return false
 end
 
-def full?
+def full? #returns true for a draw, false for in progress game 
   @board.all? {|index| index == "X" || index == "O"}
 end
 
