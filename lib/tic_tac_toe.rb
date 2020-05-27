@@ -25,30 +25,31 @@ def display_board
   puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 end
 
+#accepts users input as an argument, converts that to an integer in array format (0-8)
 def input_to_index(user_input)
   user_input.to_i - 1
 end
-#index = position. (spot on the board (1-8))
+#index = position. (spot on the board (0-8))
 def move(index, current_player = "X")
   @board[index] = current_player
 end
 
 def position_taken?(index) #index = position i
   !(@board[index].nil? || @board[index] == " ")
-end
+end #returns true or false based on whether the position on board is occupied.
 
 def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
-end
+end #returns true or false if the position is already taken and checks that the move is on the game board.
 
-def turn_count
-  turn = 0 #start at no turns.
-  @board.each do |index| #iterating through each spot on the board.
+def turn_count #counts occupied positions!
+  turn = 0 #start at position 0.
+  @board.each do |index| #iterating through each spot on the board. Is it occupied?
     if index == "X" || index == "O" #if there is an X or O in that spot.
-      turn += 1 #add a turn for every next play.
+      turn += 1 #then you must turn!
     end
   end
-  return turn 
+  return turn  #if there is not an X or O in that spot, take your turn and put your X or O there.
 end
 
 def current_player
