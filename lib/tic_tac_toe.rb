@@ -42,13 +42,13 @@ def valid_move?(index)
 end
 
 def turn_count
-  turn = 0
-  @board.each do |index|
-    if index == "X" || index == "O"
-      turn += 1
+  turn = 0 #start at no turns. 
+  @board.each do |index| #iterating through each spot on the board. 
+    if index == "X" || index == "O" #if there is an X or O in that spot. 
+      turn += 1 #add a turn for every next play. 
     end
   end
-  return turn
+  return turn 
 end
 
 def current_player
