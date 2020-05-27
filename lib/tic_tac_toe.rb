@@ -1,5 +1,6 @@
 class TicTacToe
 #Defining a class. We will be playing the game via instances of TicTacToe.
+#When we define TicTacToe.new, we will be bringing a new game to life!
   WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
@@ -11,6 +12,7 @@ class TicTacToe
     [6, 4, 2]
   ]
 
+#@board = 
 def initialize
   @board = Array.new(9, " ")
 end
