@@ -54,6 +54,7 @@ end
 
 def current_player
   #if the turn count is an even number, that means O just went, so the next/current player is X
+  #returns the correct player, X or O, for the next move, even or odd.
   num_turns = turn_count
   if num_turns % 2 == 0
     player = "X"
