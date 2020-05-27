@@ -101,18 +101,18 @@ def full? #returns true for a draw, false for in progress game
 end
 
 def draw?
-  if !won? && full?
-    return true
+  if !won? && full? #(If someone did not win and the board is full)
+    return true #true for a draw
   else
-    return false
+    return false #false for a won game or in progress game 
   end
 end
 
 def over?
   if won? || draw?
-    return true
+    return true #true for a draw, the game is over
   else
-    return false
+    return false #false for a won game or if the game is in progress, the game is not over
   end
 end
 
