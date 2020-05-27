@@ -1,5 +1,5 @@
 class TicTacToe
-
+#Defining a class. We will be playing the game via instances of TicTacToe.
   WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
