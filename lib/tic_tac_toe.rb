@@ -145,5 +145,5 @@ end
 end
 
 #instantiates an instance of TicTacToe and calls play on that instance:
-#game = TicTacToe.new 
+#game = TicTacToe.new
 #game.play
