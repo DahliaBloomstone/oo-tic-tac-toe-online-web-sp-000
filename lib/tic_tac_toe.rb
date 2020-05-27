@@ -12,7 +12,7 @@ class TicTacToe
     [6, 4, 2]
   ]
 
-#@board = instance variable that expreses the state of the game. Who won, who lost, position. 
+#@board = instance variable that expreses the state of the game. Who won, who lost, position.
 def initialize
   @board = Array.new(9, " ")
 end
@@ -33,7 +33,7 @@ def move(index, current_player = "X")
   @board[index] = current_player
 end
 
-def position_taken?(index) #index = position i 
+def position_taken?(index) #index = position i
   !(@board[index].nil? || @board[index] == " ")
 end
 
