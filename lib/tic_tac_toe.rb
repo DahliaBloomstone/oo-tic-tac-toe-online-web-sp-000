@@ -45,7 +45,7 @@ end #returns true or false if the position is already taken and checks that the 
 def turn_count #counts occupied positions!
   turn = 0 #start at position 0.
   @board.each do |index| #iterating through each spot on the board. Is it occupied?
-    if index == "X" || index == "O" #if there is an X or O in that spot.
+    if index == "X" || index == "O" #if there is an X or O in that spot,
       turn += 1 #then you must turn!
     end
   end
