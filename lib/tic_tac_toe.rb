@@ -110,9 +110,9 @@ end
 
 def over?
   if won? || draw?
-    return true #true for a draw, the game is over
+    return true #true for a draw or won game, the game is over
   else
-    return false #false for a won game or if the game is in progress, the game is not over
+    return false #false if the game is in progress, the game is not over
   end
 end
 
