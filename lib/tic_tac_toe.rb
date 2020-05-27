@@ -117,7 +117,7 @@ def over?
 end
 
 def winner
-  index = [] 
+  index = []
   index = won? #Are you in the position that won?
   if index == false #if no position won
     return nil #return no winner
