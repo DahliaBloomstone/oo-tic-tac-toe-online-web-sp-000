@@ -135,9 +135,9 @@ def play
   until over? == true
     turn #asks for players input on the turn of the game. checks if the game is over afer every turn.
   end
-  if won? #checks if the game is won, draw after every turn.
-    puts "Congratulations #{winner}!"
-  elsif draw?
+  if won? #checks if the game is won, draw after every turn. Stops playing if someone won.
+    puts "Congratulations #{winner}!" #congratulates winner X or O.
+  elsif draw? #stops playing in a draw. Plays through an entire game.
     puts "Cat's Game!"
   end
 end
